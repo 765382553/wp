@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+	<context id="context1">
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://119.29.15.115:3306/ticketmanage_wxs"
+			userId="root" password="248624" />
+		<javaModelGenerator targetPackage="cn.ticket.entity"
+			targetProject="TicketSystem" />
+		<sqlMapGenerator targetPackage="cn.ticket.mapper"
+			targetProject="TicketSystem" />
+		<javaClientGenerator targetPackage="cn.ticket.dao"
+			targetProject="TicketSystem" type="XMLMAPPER" />
+		<!-- 用户表 -->
+		<table tableName="table_wxs_users" domainObjectName="Users"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+			<columnOverride column="wxs_account" property="account" />
+			<columnOverride column="wxs_password" property="password" />
+			<columnOverride column="wxs_balance" property="balance" />
+			<columnOverride column="wxs_email" property="email" />
+			<columnOverride column="wxs_name" property="name" />
+			<columnOverride column="wxs_card_id" property="cardId" />
+		</table>
+		<!-- 管理员表 -->
+		<table tableName="table_wxs_admin" domainObjectName="Admins"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+			<columnOverride column="wxs_id" property="Id" />
+			<columnOverride column="wxs_account" property="account" />
+			<columnOverride column="wxs_password" property="password" />
+			<columnOverride column="wxs_email" property="email" />
+			<columnOverride column="wxs_address" property="address" />
+		</table>
+		<!-- 车次表 -->
+		<table tableName="table_wxs_ticket" domainObjectName="Tickets"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+			<columnOverride column="wxs_ticket_id" property="Id" />
+			<columnOverride column="wxs_trains_num" property="trainsNum" />
+			<columnOverride column="wxs_bus_type" property="busType" />
+			<columnOverride column="wxs_departure_place" property="departPlace" />
+			<columnOverride column="wxs_destination" property="destination" />
+			<columnOverride column="wxs_departure_time" property="departureTime" />
+			<columnOverride column="wxs_ticket_price" property="ticketPrice" />
+			<columnOverride column="wxs_count" property="count" />
+			<columnOverride column="wxs_ticket_barrier" property="ticketBarrier" />
+			<columnOverride column="wxs_seat_residual" property="seatResidual" />
+			<columnOverride column="wxs_date" property="date" />
+		</table>
+
+		<!--账单 -->
+		<table tableName="table_wxs_orders" domainObjectName="Orders"
+			enableCountByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" enableUpdateByExample="false"
+			selectByExampleQueryId="false">
+			<columnOverride column="wxs_order_num" property="orderNum" />
+			<columnOverride column="wxs_trains_num" property="trainsNum" />
+			<columnOverride column="wxs_seat_num" property="seatNum" />
+			<columnOverride column="wxs_total_price" property="totalPrice" />
+			<columnOverride column="wxs_custom_id" property="customId" />
+			<columnOverride column="WXS_custom_name" property="customName" />
+			<columnOverride column="wxs_account" property="account" />
+			<columnOverride column="wxs_date" property="date" />
+			<columnOverride column="wxs_ticket_status" property="ticketStatus" />
+			<columnOverride column="wxs_departure_place" property="departPlace" />
+			<columnOverride column="wxs_destination" property="destination" />
+			<columnOverride column="wxs_departure_time" property="departTime" />
+			<columnOverride column="wxs_ticket_barrier" property="ticketBarrier" />
+		</table>
+
+		<!--身份的信息 -->
+		<table tableName="table_wxs_passager_info" domainObjectName="PassagerInfo"
+			enableCountByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" enableUpdateByExample="false"
+			selectByExampleQueryId="false">
+			<columnOverride column="wxs_name" property="name" />
+			<columnOverride column="wxs_id" property="id" />
+		</table>
+
+		<!-- 公告 -->
+		<table tableName="table_wxs_notice" domainObjectName="Notice"
+			enableCountByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" enableUpdateByExample="false"
+			selectByExampleQueryId="false">
+			<columnOverride column="wxs_id" property="id" />
+			<columnOverride column="wxs_content" property="content" />
+		</table>
+
+		<!-- 用户反馈 -->
+		<table tableName="table_wxs_back" domainObjectName="Back"
+			enableCountByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" enableUpdateByExample="false"
+			selectByExampleQueryId="false">
+			<columnOverride column="wxs_id" property="id" />
+			<columnOverride column="wxs_name" property="name" />
+			<columnOverride column="wxs_email" property="email" />
+			<columnOverride column="wxs_content" property="content" />
+			<columnOverride column="wxs_date" property="date" />
+			<columnOverride column="wxs_status" property="status" />
+		</table>
+
+
+	</context>
+
+</generatorConfiguration>

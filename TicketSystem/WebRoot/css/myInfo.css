@@ -1,0 +1,131 @@
+@CHARSET "UTF-8";
+
+h3 {
+	font-family: "微软雅黑";
+	text-indent: 1em;
+	color: ghostwhite;
+	text-align: center;
+}
+
+#info {
+	height: 450px;
+	width: 1002px;
+	background: black;
+	margin: 0px auto;
+	filter: alpha(opacity = 60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+	padding: 40px;
+}
+
+#mypasswd {
+	width: 49.8%;
+	float: left;
+}
+
+#changePass {
+	width: 240px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#changePass .span1 {
+	display: none;
+	color: red;
+	position: absolute;
+	top: 30px;
+	left: 5px;
+}
+
+#changePass .span2 {
+	display: none;
+	color: red;
+	position: absolute;
+	top: 90px;
+	left: 5px;
+}
+
+#changePass .span3 {
+	display: none;
+	color: red;
+	position: absolute;
+	top: 150px;
+	left: 5px;
+}
+
+#changeInfo {
+	width: 240px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#changeInfo .span1 {
+	display: none;
+	color: red;
+	position: absolute;
+	top: 30px;
+	left: 5px;
+}
+
+#changeInfo .span2 {
+	display: none;
+	color: red;
+	position: absolute;
+	top: 90px;
+	left: 5px;
+}
+
+#changeInfo .span3 {
+	display: none;
+	color: red;
+	position: absolute;
+	top: 150px;
+	left: 5px;
+}
+
+#mid {
+	width: 0.6px;
+	height: 400px;
+	background: white;
+	float: left;
+}
+
+#myinfor {
+	width: 49.8%;
+	height: 280px;
+	float: left;
+}
+
+input {
+	display: block;
+	width: 250px;
+	height: 20px;
+	padding: 13px;
+	margin-top: 30px;
+	border-radius: 6px;
+	outline: none;
+}
+
+#updPwd {
+	padding: 10px;
+	width: 250px;
+	height: 40px;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	vertical-align: middle;
+	background: #4f9a0a;
+	border: 0;
+}
+
+#updInfo {
+	padding: 10px;
+	width: 250px;
+	height: 40px;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	vertical-align: middle;
+	background: #4f9a0a;
+	border: 0;
+}
